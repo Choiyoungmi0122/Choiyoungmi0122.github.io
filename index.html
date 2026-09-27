@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="최영미의 AI 모델 학습, 웹 기반 AI 시스템 개발, HCI 연구 프로젝트 포트폴리오"
+    >
+    <meta name="theme-color" content="#ffffff">
+    <title>최영미 | AI 프로젝트 포트폴리오</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23e85d04'/%3E%3Cpath d='M14 17h9l9 14 9-14h9L36 39v10h-8V39L14 17Z' fill='white'/%3E%3C/svg%3E"
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#intro" aria-label="최영미 포트폴리오 처음으로">
+          <span>최영미</span>
+        </a>
+        <nav class="site-nav" aria-label="주요 섹션">
+          <a href="#projects">프로젝트</a>
+          <a href="#research">연구 경험</a>
+          <a href="#achievements">성과</a>
+          <a href="#contact">연락처</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="intro" id="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title">최영미</h1>
+          <p class="intro-description">
+            Computer Vision, LLM, HCI 프로젝트를 수행했습니다. 모델 학습부터 웹 시스템 구현,
+            사용자 실험과 분석까지 경험했습니다.
+          </p>
+          <a
+            class="primary-link"
+            href="https://github.com/Choiyoungmi0122"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub 보기 <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="tech-line" aria-label="주요 기술">
+          <span>Python</span><span>YOLO</span><span>PyTorch</span><span>OpenCV</span>
+          <span>Jetson Nano</span><span>LLM API</span><span>React</span>
+          <span>FastAPI</span><span>Data Analysis</span>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="projects-title">프로젝트</h2>
+        </div>
+
+        <article class="project project-featured" aria-labelledby="project-01-title">
+          <header class="project-header">
+            <div class="project-ordinal">
+              <span>Project</span>
+              <strong>01</strong>
+            </div>
+            <div>
+              <p class="project-flag">주요 프로젝트</p>
+              <h3 id="project-01-title">YOLO 기반 재활용 객체탐지</h3>
+            </div>
+          </header>
+
+          <div class="project-grid">
+            <div class="project-details">
+              <div class="detail-block">
+                <h4>What it is</h4>
+                <p>
+                  재활용품 객체탐지를 위해 여러 YOLO 모델을 학습하고 성능을 비교한 프로젝트입니다.
+                  모델별 Precision, Recall, mAP 등을 확인하고, 학습된 모델을 Jetson Nano 환경에 적용해
+                  추론 테스트를 진행했습니다.
+                </p>
+              </div>
+              <div class="detail-block">
+                <h4>What I did</h4>
+                <ul class="work-list">
+                  <li>객체탐지 데이터 구성 및 학습 환경 설정</li>
+                  <li>YOLO 모델 학습</li>
+                  <li>모델별 성능 비교</li>
+                  <li>추론 결과 확인</li>
+                  <li>Jetson Nano 환경 적용</li>
+                </ul>
+              </div>
+              <dl class="project-meta">
+                <div>
+                  <dt>Tech</dt>
+                  <dd>Python · Ultralytics YOLO · PyTorch · OpenCV · Jetson Nano</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>모델별 성능 비교 및 Jetson Nano 적용·추론 테스트</dd>
+                </div>
+                <div>
+                  <dt>GitHub</dt>
+                  <dd class="pending-field">URL 추후 입력</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="project-media project-media-featured" aria-label="프로젝트 이미지 자리">
+              <!-- Replace each .media-placeholder with an img element when project screenshots are ready. -->
+              <figure class="media-placeholder">
+                <div class="placeholder-number">01-A</div>
+                <figcaption>
+                  <strong>Detection 결과 이미지</strong>
+                  <span>클래스와 바운딩 박스가 잘 보이는 실제 추론 화면</span>
+                </figcaption>
+              </figure>
+              <figure class="media-placeholder">
+                <div class="placeholder-number">01-B</div>
+                <figcaption>
+                  <strong>Jetson Nano 구동 사진</strong>
+                  <span>보드와 카메라 연결 상태를 확인할 수 있는 현장 사진</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="project-02-title">
+          <header class="project-header">
+            <div class="project-ordinal"><span>Project</span><strong>02</strong></div>
+            <h3 id="project-02-title">LLM 기반 자기소개서 작성 지원 도구</h3>
+          </header>
+          <div class="project-grid">
+            <div class="project-details">
+              <div class="detail-block">
+                <h4>What it is</h4>
+                <p>
+                  IT 직군 합격 자기소개서를 기반으로 특정 도메인에 특화된 LLM 작성 지원 도구를 개발한
+                  프로젝트입니다.
+                </p>
+              </div>
+              <div class="detail-block">
+                <h4>What I did</h4>
+                <ul class="work-list">
+                  <li>아이디어 기획, 데이터 수집 및 전처리</li>
+                  <li>1,728개 질문-응답 데이터 구성</li>
+                  <li>Gemini API를 이용한 키워드 추출</li>
+                  <li>Gemma 기반 Full Fine-tuning</li>
+                  <li>작성 지원 도구 구현</li>
+                  <li>사용자 파일럿 테스트 설계 및 진행</li>
+                </ul>
+              </div>
+              <dl class="project-meta">
+                <div><dt>Tech</dt><dd>Python · Gemma · Hugging Face · Gemini API · Fine-tuning</dd></div>
+                <div><dt>Result</dt><dd>HCI 학술대회 논문 · SW 등록</dd></div>
+                <div><dt>GitHub</dt><dd class="pending-field">URL 추후 입력</dd></div>
+              </dl>
+            </div>
+            <div class="project-media" aria-label="프로젝트 이미지 자리">
+              <figure class="media-placeholder">
+                <div class="placeholder-number">02-A</div>
+                <figcaption><strong>시스템 화면</strong><span>입력부터 작성 지원 결과까지 보이는 화면</span></figcaption>
+              </figure>
+              <figure class="media-placeholder">
+                <div class="placeholder-number">02-B</div>
+                <figcaption><strong>학습 또는 결과 화면</strong><span>학습 과정이나 결과 비교를 보여주는 자료</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="project-03-title">
+          <header class="project-header">
+            <div class="project-ordinal"><span>Project</span><strong>03</strong></div>
+            <h3 id="project-03-title">TCI 기반 가상환자 생성 및 응답 비교 시스템 <span>/ BatchVis</span></h3>
+          </header>
+          <div class="metric-strip" aria-label="프로젝트 데이터 규모">
+            <span><strong>44</strong> Personas</span>
+            <span><strong>10</strong> Questions</span>
+            <span><strong>3</strong> Runs</span>
+            <span><strong>1,320</strong> Responses</span>
+          </div>
+          <div class="project-grid">
+            <div class="project-details">
+              <div class="detail-block">
+                <h4>What it is</h4>
+                <p>
+                  TCI 성격 이론을 기반으로 여러 가상환자 페르소나를 생성하고, 동일 질문에 대한 LLM 응답을
+                  비교·분석할 수 있도록 개발한 시스템입니다.
+                </p>
+              </div>
+              <div class="detail-block">
+                <h4>What I did</h4>
+                <ul class="work-list">
+                  <li>시스템 기획 및 개발</li>
+                  <li>TCI 기반 persona 구성 및 LLM 응답 생성</li>
+                  <li>Batch API 활용</li>
+                  <li>응답 분석 및 비교</li>
+                  <li>시각화 UI 구현</li>
+                  <li>데이터 분석 및 연구 진행</li>
+                </ul>
+              </div>
+              <dl class="project-meta">
+                <div><dt>Tech</dt><dd>Python · OpenAI API · SBERT · Gemini API · FastAPI · Data Visualization</dd></div>
+                <div><dt>Result</dt><dd>44개 페르소나의 1,320개 응답 생성·비교 환경 구성</dd></div>
+                <div>
+                  <dt>GitHub</dt>
+                  <dd><a href="https://github.com/Choiyoungmi0122/BatchVis" target="_blank" rel="noreferrer">BatchVis 저장소 <span aria-hidden="true">↗</span></a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="project-media" aria-label="프로젝트 이미지 자리">
+              <figure class="media-placeholder">
+                <div class="placeholder-number">03-A</div>
+                <figcaption><strong>가상환자 응답 비교 UI</strong><span>동일 질문의 페르소나별 응답을 비교하는 화면</span></figcaption>
+              </figure>
+              <figure class="media-placeholder">
+                <div class="placeholder-number">03-B</div>
+                <figcaption><strong>분석·시각화 화면</strong><span>응답 차이와 분석 결과가 잘 드러나는 화면</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <div class="compact-projects">
+          <article class="project project-compact" aria-labelledby="project-04-title">
+            <header class="project-header">
+              <div class="project-ordinal"><span>Project</span><strong>04</strong></div>
+              <h3 id="project-04-title">CARE 가이드라인 기반 증례보고 작성 지원 시스템</h3>
+            </header>
+            <div class="detail-block">
+              <h4>What it is</h4>
+              <p>의료기록을 기반으로 증례보고 작성을 단계적으로 지원하기 위해 개발한 AI 기반 웹 시스템입니다.</p>
+            </div>
+            <div class="detail-block">
+              <h4>What I did</h4>
+              <p>서비스와 workflow 설계, UI/UX 및 Frontend·Backend 개발, LLM 작성지원 기능 연동, 연구용 기능 구현</p>
+            </div>
+            <dl class="project-meta">
+              <div><dt>Tech</dt><dd>React · API · LLM · Web Development</dd></div>
+              <div><dt>Result</dt><dd>SW 등록 C-2026-043637</dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/case-report" target="_blank" rel="noreferrer">case-report 저장소 <span aria-hidden="true">↗</span></a></dd></div>
+            </dl>
+            <figure class="media-placeholder media-placeholder-wide">
+              <div class="placeholder-number">04</div>
+              <figcaption><strong>실제 시스템 화면</strong><span>작성 단계와 지원 기능이 함께 보이는 화면 1~2장</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="project project-compact" aria-labelledby="project-05-title">
+            <header class="project-header">
+              <div class="project-ordinal"><span>Project</span><strong>05</strong></div>
+              <h3 id="project-05-title">생성형 AI History UI 연구</h3>
+            </header>
+            <div class="detail-block">
+              <h4>What it is</h4>
+              <p>생성형 이미지의 단계별 히스토리를 가로·세로 UI로 구성하고, 배열 방향과 히스토리 길이가 사용자 경험에 미치는 영향을 비교한 HCI 연구입니다.</p>
+            </div>
+            <div class="detail-block">
+              <h4>What I did</h4>
+              <p>웹 기반 실험 시스템과 React UI 구현, 실험 설계 및 진행, 데이터 수집·분석</p>
+            </div>
+            <dl class="project-meta">
+              <div><dt>Tech</dt><dd>React · Web Experiment · Data Analysis</dd></div>
+              <div><dt>Result</dt><dd>가로·세로 History UI 사용자 경험 비교</dd></div>
+              <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/HCI2026" target="_blank" rel="noreferrer">HCI2026 저장소 <span aria-hidden="true">↗</span></a></dd></div>
+            </dl>
+            <div class="paired-placeholders" aria-label="프로젝트 이미지 자리">
+              <figure class="media-placeholder"><div class="placeholder-number">05-A</div><figcaption><strong>가로형 UI</strong><span>History 배열 화면</span></figcaption></figure>
+              <figure class="media-placeholder"><div class="placeholder-number">05-B</div><figcaption><strong>세로형 UI</strong><span>History 배열 화면</span></figcaption></figure>
+            </div>
+          </article>
+        </div>
+
+        <article class="project project-work-experience" aria-labelledby="project-06-title">
+          <header class="project-header">
+            <div class="project-ordinal"><span>Project</span><strong>06</strong></div>
+            <div>
+              <p class="project-flag">미래내일 일경험 · 2026</p>
+              <h3 id="project-06-title">HeatCook AI · 열 전도 정보 분석을 위한 AI 학습 모듈</h3>
+              <p class="project-context">㈜HC컴퍼니 참여 프로젝트 · Dxlab 팀장</p>
+            </div>
+          </header>
+          <div class="metric-strip" aria-label="HeatCook AI 프로젝트 주요 지표">
+            <span><strong>6</strong> Cooking States</span>
+            <span><strong>3</strong> Models Compared</span>
+            <span><strong>0.9517</strong> Macro F1</span>
+            <span><strong>1.0000</strong> Overheat Recall</span>
+          </div>
+          <div class="project-grid">
+            <div class="project-details">
+              <div class="detail-block">
+                <h4>What it is</h4>
+                <p>
+                  온도 시계열과 조리 조건으로 조리 상태 6종과 식품 종류 4종을 분리 판별하고,
+                  슬라이딩 윈도우 기반 위험 탐지와 FastAPI 추론 API를 HeatCook AI 앱에 연결한
+                  8주 팀 프로젝트입니다.
+                </p>
+              </div>
+              <div class="detail-block">
+                <h4>What I did</h4>
+                <ul class="work-list">
+                  <li>프로젝트 기획 및 총괄</li>
+                  <li>조리 시나리오 설계</li>
+                  <li>레이블링 기준 정의</li>
+                  <li>일정 관리 및 팀 조율</li>
+                  <li>최종 발표 자료 구성 및 발표 준비</li>
+                </ul>
+              </div>
+              <dl class="project-meta">
+                <div><dt>Tech</dt><dd>Python · scikit-learn · PyTorch · FastAPI · React Native · TypeScript</dd></div>
+                <div><dt>Result</dt><dd>합성 데이터 기준 성능 검증 · Data → AI → API → App 통합 시스템 구현</dd></div>
+                <div><dt>GitHub</dt><dd class="pending-field">URL 추후 입력</dd></div>
+              </dl>
+            </div>
+            <div class="project-media project-media-slides" aria-label="HeatCook AI 시스템 및 화면 구성">
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/heatcook-product-flow.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/heatcook-product-flow.png" alt="HeatCook AI 조리 조건 설정, 실시간 모니터링, 위험 경고, 결과 요약 화면">
+                </a>
+                <figcaption><strong>최종 프로토타입 흐름</strong><span>설정 → 모니터링 → 위험 경고 → 결과 요약</span></figcaption>
+              </figure>
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/heatcook-architecture.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/heatcook-architecture.png" alt="HeatCook AI 데이터, AI 모델, 안전 로직, FastAPI, 앱 연결 구조">
+                </a>
+                <figcaption><strong>시스템 아키텍처</strong><span>Data → AI Model → Safety Logic → FastAPI → App</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="research-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <h2 id="research-title">연구 경험</h2>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <p class="research-type">Computer Vision</p>
+            <h3>Drone-based Forest Fire Detection</h3>
+            <ul>
+              <li>YOLO 기반 산불 탐지 연구</li>
+              <li>Jetson Nano 활용</li>
+              <li>제1저자 · 한국산업융합학회 2024 춘계학술대회 포스터 발표</li>
+            </ul>
+          </article>
+          <article class="research-card">
+            <p class="research-type">Object Localization</p>
+            <h3>Camera + 2D LiDAR Object Localization</h3>
+            <ul>
+              <li>YOLOv5 객체탐지 모델 학습</li>
+              <li>학습 모델 Jetson Nano 이전 및 구동 담당</li>
+              <li>제5회 한국통신학회 장려논문상</li>
+            </ul>
+            <p class="scope-note">기여 범위: 객체탐지 모델 학습 및 Jetson Nano 적용</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="achievements-section" id="achievements" aria-labelledby="achievements-title">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2 id="achievements-title">연구 및 성과</h2>
+        </div>
+
+        <div class="achievement-columns">
+          <article class="achievement-column">
+            <h3>Publications</h3>
+            <ol class="publication-list">
+              <li>
+                <h4>산불 감지 및 알림을 위한 드론 시스템 개발에 대한 연구</h4>
+                <p class="publication-meta">제1저자 · 한국산업융합학회 2024 춘계학술대회 · 포스터 발표</p>
+              </li>
+              <li>
+                <h4>An Automated Hierarchy Method to Improve History Record</h4>
+                <p class="publication-meta">제3저자 · Applied Sciences · 2025</p>
+                <p class="publication-contribution">기여: 실험 설계 일부 · 실험 진행</p>
+              </li>
+              <li>
+                <h4>LLM 기반 자기소개서 작성 지원 도구 설계에 대한 파일럿 테스트 평가</h4>
+                <p class="publication-meta">제1저자 · EA 발표 · HCI 학술대회 · 2025</p>
+              </li>
+              <li>
+                <h4>Review on the Use of Augmented Reality Technology on Computational Thinking Education</h4>
+                <p class="publication-meta">제2저자 · Springer · 2025</p>
+                <p class="publication-contribution">기여: 관련 문헌 탐색·정리 · 분담 섹션 작성</p>
+              </li>
+              <li>
+                <h4>이미지 생성 도구에서의 히스토리 UI 배열 방향이 사용자에게 미치는 영향에 관한 연구</h4>
+                <p class="publication-meta">제1저자 · HCI 학술대회 · 2026</p>
+              </li>
+              <li>
+                <h4>기질 및 성격기반 가상환자 생성 및 응답 비교 시스템 개발에 관한 연구</h4>
+                <p class="publication-meta">제1저자 · 한국디지털콘텐츠학회지 · 2026</p>
+              </li>
+            </ol>
+          </article>
+
+          <article class="achievement-column">
+            <h3>Software / IP</h3>
+            <ul class="achievement-list">
+              <li><span>AI 기반 신발 디자인 추출 프로그램</span><strong>SW 등록</strong></li>
+              <li><span>대규모 언어모델 기반 자기소개서 작성 보조 도구</span><strong>SW 등록</strong></li>
+              <li><span>CARE 가이드라인 기반 증례보고 작성 지원 시스템</span><strong>SW 등록</strong></li>
+              <li><span>성격 및 기질에 기반한 가상 환자 생성 보조 방법 및 장치</span><strong class="accent-text">특허 출원</strong></li>
+            </ul>
+          </article>
+
+          <article class="achievement-column">
+            <h3>Awards</h3>
+            <ul class="achievement-list award-list">
+              <li>ICT Challenge 2025 정보통신기획평가원장상</li>
+              <li>제6회 부울경 ICT 아이디어 경진대회 대상</li>
+              <li>ICT 이노베이션 디지털 신기술 공모전 특별상</li>
+              <li>제5회 한국통신학회 장려논문상</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">연락처</h2>
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd class="pending-field">이메일 추후 입력</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>최영미 · AI 프로젝트 포트폴리오</p>
+      <a href="#intro">맨 위로</a>
+    </footer>
+  </body>
+</html>
