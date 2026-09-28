@@ -107,28 +107,49 @@
                 </div>
                 <div>
                   <dt>GitHub</dt>
-                  <dd class="pending-field">URL 추후 입력</dd>
+                  <dd><a href="https://github.com/Choiyoungmi0122/recycling-yolo" target="_blank" rel="noreferrer">recycling-yolo 저장소 <span aria-hidden="true">↗</span></a></dd>
                 </div>
               </dl>
             </div>
 
-            <div class="project-media project-media-featured" aria-label="프로젝트 이미지 자리">
-              <!-- Replace each .media-placeholder with an img element when project screenshots are ready. -->
-              <figure class="media-placeholder">
-                <div class="placeholder-number">01-A</div>
-                <figcaption>
-                  <strong>Detection 결과 이미지</strong>
-                  <span>클래스와 바운딩 박스가 잘 보이는 실제 추론 화면</span>
-                </figcaption>
+            <div class="project-media project-media-featured project-media-recycling" aria-label="재활용품 객체탐지 결과 및 카메라 테스트 환경">
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/recycling-detection-result.jpg?v=2" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/recycling-detection-result.jpg?v=2" alt="20 cm 거리에서 촬영한 페트병, 캔, 유리 포장재의 YOLO 객체탐지 결과">
+                </a>
+                <figcaption><strong>YOLO 모델 추론 결과</strong><span>20 cm 거리에서 촬영한 재활용품 탐지 예시</span></figcaption>
               </figure>
-              <figure class="media-placeholder">
-                <div class="placeholder-number">01-B</div>
-                <figcaption>
-                  <strong>Jetson Nano 구동 사진</strong>
-                  <span>보드와 카메라 연결 상태를 확인할 수 있는 현장 사진</span>
-                </figcaption>
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/recycling-camera-setup.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/recycling-camera-setup.png" alt="40~50 cm 촬영 거리와 탐지 영역을 표시한 재활용품 탐지 카메라 설치 모습">
+                </a>
+                <figcaption><strong>카메라 테스트 환경</strong><span>40~50 cm 거리의 촬영 범위와 카메라 설치 위치</span></figcaption>
               </figure>
             </div>
+          </div>
+
+          <div class="project-video-comparison" aria-label="20 cm 동일 입력 YOLO 모델 결과 비교">
+            <figure class="project-video-card">
+              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력 원본 영상">
+                <source src="./assets/video/recycling-input-20cm.mp4?v=3" type="video/mp4">
+                이 브라우저에서는 영상을 재생할 수 없습니다.
+              </video>
+              <figcaption><strong>동일 입력</strong><span>20 cm 원본 영상</span></figcaption>
+            </figure>
+            <figure class="project-video-card">
+              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력의 YOLO26n 추론 결과 영상">
+                <source src="./assets/video/recycling-yolo26n-20cm.mp4?v=3" type="video/mp4">
+                이 브라우저에서는 영상을 재생할 수 없습니다.
+              </video>
+              <figcaption><strong>YOLO26n</strong><span>21.17 FPS</span></figcaption>
+            </figure>
+            <figure class="project-video-card">
+              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력의 YOLO26s 추론 결과 영상">
+                <source src="./assets/video/recycling-yolo26s-20cm.mp4?v=3" type="video/mp4">
+                이 브라우저에서는 영상을 재생할 수 없습니다.
+              </video>
+              <figcaption><strong>YOLO26s</strong><span>8.93 FPS</span></figcaption>
+            </figure>
           </div>
         </article>
 
@@ -160,17 +181,21 @@
               <dl class="project-meta">
                 <div><dt>Tech</dt><dd>Python · Gemma · Hugging Face · Gemini API · Fine-tuning</dd></div>
                 <div><dt>Result</dt><dd>HCI 학술대회 논문 · SW 등록</dd></div>
-                <div><dt>GitHub</dt><dd class="pending-field">URL 추후 입력</dd></div>
+                <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/eassy" target="_blank" rel="noreferrer">eassy 저장소 <span aria-hidden="true">↗</span></a></dd></div>
               </dl>
             </div>
-            <div class="project-media" aria-label="프로젝트 이미지 자리">
-              <figure class="media-placeholder">
-                <div class="placeholder-number">02-A</div>
-                <figcaption><strong>시스템 화면</strong><span>입력부터 작성 지원 결과까지 보이는 화면</span></figcaption>
+            <div class="project-media project-media-cover-letter" aria-label="자기소개서 작성 지원 시스템 구성">
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/cover-letter-pilot-experiment.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/cover-letter-pilot-experiment.png" alt="자기소개서 작성 지원 도구 파일럿 실험 진행 사진">
+                </a>
+                <figcaption><strong>파일럿 실험 진행</strong></figcaption>
               </figure>
-              <figure class="media-placeholder">
-                <div class="placeholder-number">02-B</div>
-                <figcaption><strong>학습 또는 결과 화면</strong><span>학습 과정이나 결과 비교를 보여주는 자료</span></figcaption>
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/cover-letter-training-pipeline.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/cover-letter-training-pipeline.png" alt="합격 자기소개서 수집, 데이터 전처리와 키워드 추출, 전체 모델 파인튜닝을 거치는 데이터 구성 및 모델 학습 과정">
+                </a>
+                <figcaption><strong>데이터 구성 및 모델 학습 과정</strong></figcaption>
               </figure>
             </div>
           </div>
@@ -216,14 +241,12 @@
                 </div>
               </dl>
             </div>
-            <div class="project-media" aria-label="프로젝트 이미지 자리">
-              <figure class="media-placeholder">
-                <div class="placeholder-number">03-A</div>
-                <figcaption><strong>가상환자 응답 비교 UI</strong><span>동일 질문의 페르소나별 응답을 비교하는 화면</span></figcaption>
-              </figure>
-              <figure class="media-placeholder">
-                <div class="placeholder-number">03-B</div>
-                <figcaption><strong>분석·시각화 화면</strong><span>응답 차이와 분석 결과가 잘 드러나는 화면</span></figcaption>
+            <div class="project-media project-media-batchvis" aria-label="BatchVis 시스템 및 분석 화면">
+              <figure class="project-slide">
+                <a class="project-image-link" href="./assets/batchvis-interface.png" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+                  <img src="./assets/batchvis-interface.png" alt="BatchVis 환자 정보 입력, 가상환자 페르소나 선택, 응답 프롬프트 검토 화면">
+                </a>
+                <figcaption><strong>가상환자 생성·응답 검토 화면</strong><span>환자 입력, 페르소나 선택, 응답 프롬프트 확인</span></figcaption>
               </figure>
             </div>
           </div>
@@ -248,10 +271,6 @@
               <div><dt>Result</dt><dd>SW 등록 C-2026-043637</dd></div>
               <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/case-report" target="_blank" rel="noreferrer">case-report 저장소 <span aria-hidden="true">↗</span></a></dd></div>
             </dl>
-            <figure class="media-placeholder media-placeholder-wide">
-              <div class="placeholder-number">04</div>
-              <figcaption><strong>실제 시스템 화면</strong><span>작성 단계와 지원 기능이 함께 보이는 화면 1~2장</span></figcaption>
-            </figure>
           </article>
 
           <article class="project project-compact" aria-labelledby="project-05-title">
@@ -272,10 +291,6 @@
               <div><dt>Result</dt><dd>가로·세로 History UI 사용자 경험 비교</dd></div>
               <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/HCI2026" target="_blank" rel="noreferrer">HCI2026 저장소 <span aria-hidden="true">↗</span></a></dd></div>
             </dl>
-            <div class="paired-placeholders" aria-label="프로젝트 이미지 자리">
-              <figure class="media-placeholder"><div class="placeholder-number">05-A</div><figcaption><strong>가로형 UI</strong><span>History 배열 화면</span></figcaption></figure>
-              <figure class="media-placeholder"><div class="placeholder-number">05-B</div><figcaption><strong>세로형 UI</strong><span>History 배열 화면</span></figcaption></figure>
-            </div>
           </article>
         </div>
 
@@ -317,7 +332,7 @@
               <dl class="project-meta">
                 <div><dt>Tech</dt><dd>Python · scikit-learn · PyTorch · FastAPI · React Native · TypeScript</dd></div>
                 <div><dt>Result</dt><dd>합성 데이터 기준 성능 검증 · Data → AI → API → App 통합 시스템 구현</dd></div>
-                <div><dt>GitHub</dt><dd class="pending-field">URL 추후 입력</dd></div>
+                <div><dt>GitHub</dt><dd><a href="https://github.com/Choiyoungmi0122/heatcook-ai" target="_blank" rel="noreferrer">HeatCook AI 저장소 <span aria-hidden="true">↗</span></a></dd></div>
               </dl>
             </div>
             <div class="project-media project-media-slides" aria-label="HeatCook AI 시스템 및 화면 구성">
@@ -432,7 +447,7 @@
         <dl class="contact-list">
           <div>
             <dt>Email</dt>
-            <dd class="pending-field">이메일 추후 입력</dd>
+            <dd><a href="mailto:choiyoungmi2252@gmail.com">choiyoungmi2252@gmail.com</a></dd>
           </div>
         </dl>
       </section>
@@ -442,5 +457,80 @@
       <p>최영미 · AI 프로젝트 포트폴리오</p>
       <a href="#intro">맨 위로</a>
     </footer>
+    <script>
+      (() => {
+        const videos = [...document.querySelectorAll(".comparison-video")];
+        const [master, ...results] = videos;
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const waitUntilReady = (video) => video.readyState >= 2
+          ? Promise.resolve()
+          : new Promise((resolve) => video.addEventListener("loadeddata", resolve, { once: true }));
+
+        const playTogether = async (startTime = 0) => {
+          await Promise.all(videos.map(waitUntilReady));
+          videos.forEach((video) => video.pause());
+          videos.forEach((video) => {
+            video.currentTime = startTime;
+            video.playbackRate = 1;
+          });
+          await Promise.allSettled(videos.map((video) => video.play()));
+        };
+
+        const applyMotionPreference = () => {
+          if (reducedMotion.matches) {
+            videos.forEach((video) => {
+              video.removeAttribute("autoplay");
+              video.pause();
+              video.playbackRate = 1;
+            });
+          } else {
+            videos.forEach((video) => {
+              video.setAttribute("autoplay", "");
+            });
+            void playTogether(0);
+          }
+        };
+
+        const togglePlayback = () => {
+          if (videos.some((video) => !video.paused)) {
+            videos.forEach((video) => video.pause());
+          } else {
+            void playTogether(master.ended ? 0 : master.currentTime);
+          }
+        };
+
+        videos.forEach((video) => {
+          video.addEventListener("click", togglePlayback);
+          video.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              togglePlayback();
+            }
+          });
+        });
+
+        master.addEventListener("ended", () => {
+          if (!reducedMotion.matches) void playTogether(0);
+        });
+
+        window.setInterval(() => {
+          if (master.paused || master.ended) return;
+          master.playbackRate = 1;
+          results.forEach((video) => {
+            if (Math.abs(video.currentTime - master.currentTime) > 0.08) {
+              video.currentTime = master.currentTime;
+            }
+            video.playbackRate = 1;
+          });
+        }, 250);
+
+        if (typeof reducedMotion.addEventListener === "function") {
+          reducedMotion.addEventListener("change", applyMotionPreference);
+        } else {
+          reducedMotion.addListener(applyMotionPreference);
+        }
+        applyMotionPreference();
+      })();
+    </script>
   </body>
 </html>
