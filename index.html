@@ -109,7 +109,7 @@
               </dl>
             </div>
 
-            <div class="project-media project-media-featured project-media-recycling" aria-label="재활용품 객체탐지 결과 및 카메라 테스트 환경">
+            <div class="project-media project-media-featured project-media-recycling" aria-label="재활용품 객체탐지 결과, 카메라 테스트 환경 및 YOLO26s 추론 영상">
               <figure class="project-slide">
                 <a class="project-image-link" href="./assets/recycling-detection-result.jpg?v=2" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
                   <img src="./assets/recycling-detection-result.jpg?v=2" alt="20 cm 거리에서 촬영한 페트병, 캔, 유리 포장재의 YOLO 객체탐지 결과">
@@ -122,32 +122,25 @@
                 </a>
                 <figcaption><strong>카메라 테스트 환경</strong><span>40~50 cm 거리의 촬영 범위와 카메라 설치 위치</span></figcaption>
               </figure>
+              <figure class="project-slide project-video-slide">
+                <video class="project-inline-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력의 YOLO26s 추론 결과 영상">
+                  <source src="./assets/video/recycling-yolo26s-20cm.mp4?v=3" type="video/mp4">
+                  이 브라우저에서는 영상을 재생할 수 없습니다.
+                </video>
+                <figcaption><strong>YOLO26s 추론 영상</strong><span>8.93 FPS</span></figcaption>
+              </figure>
             </div>
           </div>
 
-          <div class="project-video-comparison" aria-label="20 cm 동일 입력 YOLO 모델 결과 비교">
-            <figure class="project-video-card">
-              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력 원본 영상">
-                <source src="./assets/video/recycling-input-20cm.mp4?v=3" type="video/mp4">
-                이 브라우저에서는 영상을 재생할 수 없습니다.
-              </video>
-              <figcaption><strong>동일 입력</strong><span>20 cm 원본 영상</span></figcaption>
-            </figure>
-            <figure class="project-video-card">
-              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력의 YOLO26n 추론 결과 영상">
-                <source src="./assets/video/recycling-yolo26n-20cm.mp4?v=3" type="video/mp4">
-                이 브라우저에서는 영상을 재생할 수 없습니다.
-              </video>
-              <figcaption><strong>YOLO26n</strong><span>21.17 FPS</span></figcaption>
-            </figure>
-            <figure class="project-video-card">
-              <video class="comparison-video" autoplay muted playsinline preload="auto" disablepictureinpicture tabindex="0" aria-label="20 cm 동일 입력의 YOLO26s 추론 결과 영상">
-                <source src="./assets/video/recycling-yolo26s-20cm.mp4?v=3" type="video/mp4">
-                이 브라우저에서는 영상을 재생할 수 없습니다.
-              </video>
-              <figcaption><strong>YOLO26s</strong><span>8.93 FPS</span></figcaption>
-            </figure>
-          </div>
+          <figure class="project-workflow">
+            <a class="project-image-link" href="./assets/recycling-system-workflow.png?v=1" target="_blank" rel="noreferrer" title="고해상도 이미지 열기">
+              <img src="./assets/recycling-system-workflow.png?v=1" alt="AI 자동 분리수거 시스템의 감지, 판정, 분리배출 및 커버 제어 동작 워크플로" loading="lazy" decoding="async">
+            </a>
+            <figcaption>
+              <strong>AI 자동 분리수거 시스템 동작 워크플로</strong>
+              <span>Jetson Orin Nano, Docker, DeepStream 기반 객체 감지·판정·분리배출 제어 흐름</span>
+            </figcaption>
+          </figure>
         </article>
 
         <article class="project" aria-labelledby="project-02-title">
@@ -394,8 +387,7 @@
               </li>
               <li>
                 <h4>An Automated Hierarchy Method to Improve History Record</h4>
-                <p class="publication-meta">제3저자 · Applied Sciences · 2025</p>
-                <p class="publication-contribution">기여: 실험 설계 일부 · 실험 진행</p>
+                <p class="publication-meta">제3저자 · Applied Sciences · 2025 | 기여: 실험 설계 일부 · 실험 진행</p>
               </li>
               <li>
                 <h4>LLM 기반 자기소개서 작성 지원 도구 설계에 대한 파일럿 테스트 평가</h4>
@@ -403,8 +395,7 @@
               </li>
               <li>
                 <h4>Review on the Use of Augmented Reality Technology on Computational Thinking Education</h4>
-                <p class="publication-meta">제2저자 · Springer · 2025</p>
-                <p class="publication-contribution">기여: 관련 문헌 탐색·정리 · 분담 섹션 작성</p>
+                <p class="publication-meta">제2저자 · Springer · 2025 | 기여: 관련 문헌 탐색·정리 · 분담 섹션 작성</p>
               </li>
               <li>
                 <h4>이미지 생성 도구에서의 히스토리 UI 배열 방향이 사용자에게 미치는 영향에 관한 연구</h4>
@@ -456,70 +447,35 @@
     </footer>
     <script>
       (() => {
-        const videos = [...document.querySelectorAll(".comparison-video")];
-        const [master, ...results] = videos;
+        const video = document.querySelector(".project-inline-video");
+        if (!video) return;
         const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-        const waitUntilReady = (video) => video.readyState >= 2
-          ? Promise.resolve()
-          : new Promise((resolve) => video.addEventListener("loadeddata", resolve, { once: true }));
-
-        const playTogether = async (startTime = 0) => {
-          await Promise.all(videos.map(waitUntilReady));
-          videos.forEach((video) => video.pause());
-          videos.forEach((video) => {
-            video.currentTime = startTime;
-            video.playbackRate = 1;
-          });
-          await Promise.allSettled(videos.map((video) => video.play()));
-        };
 
         const applyMotionPreference = () => {
           if (reducedMotion.matches) {
-            videos.forEach((video) => {
-              video.removeAttribute("autoplay");
-              video.pause();
-              video.playbackRate = 1;
-            });
+            video.removeAttribute("autoplay");
+            video.pause();
           } else {
-            videos.forEach((video) => {
-              video.setAttribute("autoplay", "");
-            });
-            void playTogether(0);
+            video.setAttribute("autoplay", "");
+            void video.play();
           }
         };
 
         const togglePlayback = () => {
-          if (videos.some((video) => !video.paused)) {
-            videos.forEach((video) => video.pause());
+          if (video.paused) {
+            void video.play();
           } else {
-            void playTogether(master.ended ? 0 : master.currentTime);
+            video.pause();
           }
         };
 
-        videos.forEach((video) => {
-          video.addEventListener("click", togglePlayback);
-          video.addEventListener("keydown", (event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              event.preventDefault();
-              togglePlayback();
-            }
-          });
+        video.addEventListener("click", togglePlayback);
+        video.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            togglePlayback();
+          }
         });
-
-        master.addEventListener("ended", () => {
-          if (!reducedMotion.matches) void playTogether(0);
-        });
-
-        window.setInterval(() => {
-          if (master.paused || master.ended) return;
-          master.playbackRate = 1;
-          results.forEach((video) => {
-            if (Math.abs(video.currentTime - master.currentTime) > 0.08) {
-              video.currentTime = master.currentTime;
-            }
-            video.playbackRate = 1;
-          });
-        }, 250);
 
         if (typeof reducedMotion.addEventListener === "function") {
           reducedMotion.addEventListener("change", applyMotionPreference);

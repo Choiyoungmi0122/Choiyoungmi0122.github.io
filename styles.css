@@ -393,8 +393,9 @@ main,
 }
 
 .project-media.project-media-recycling {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
-  max-width: 450px;
+  max-width: none;
   justify-self: end;
 }
 
@@ -432,46 +433,51 @@ main,
   object-fit: contain;
 }
 
-.project-video-comparison {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  width: 100%;
-  max-width: 930px;
-  margin: 24px auto 0;
-}
-
-.project-video-card {
-  margin: 0;
-  padding: 10px;
-  border: 1px solid var(--color-line);
-  border-radius: 4px;
-  background: var(--color-soft);
-}
-
-.project-video-card video {
+.project-media-recycling .project-inline-video {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: contain;
   background: #000000;
 }
 
-.project-video-card figcaption {
+.project-workflow {
+  width: 100%;
+  max-width: 1180px;
+  margin: 24px auto 0;
+}
+
+.project-workflow .project-image-link {
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.project-workflow img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.project-workflow figcaption {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 10px;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 12px;
 }
 
-.project-video-card figcaption strong {
-  font-size: 0.9rem;
+.project-workflow figcaption strong {
+  font-size: 0.92rem;
 }
 
-.project-video-card figcaption span {
+.project-workflow figcaption span {
   color: var(--color-muted);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .project-media-cover-letter .project-slide img {
@@ -718,17 +724,11 @@ main,
   overflow-wrap: anywhere;
 }
 
-.publication-meta,
-.publication-contribution {
+.publication-meta {
   margin: 6px 0 0;
   color: var(--color-muted);
   font-size: 0.78rem;
   line-height: 1.55;
-}
-
-.publication-contribution {
-  color: var(--color-accent);
-  font-weight: 700;
 }
 
 .achievement-list {
@@ -951,13 +951,9 @@ main,
   }
 
   .project-media.project-media-recycling {
-    max-width: none;
-    justify-self: stretch;
-  }
-
-  .project-video-comparison {
     grid-template-columns: 1fr;
     max-width: none;
+    justify-self: stretch;
   }
 
   .project-media.project-media-cover-letter {
@@ -1075,7 +1071,7 @@ main,
   .site-header,
   .skip-link,
   .primary-link,
-  .project-video-comparison,
+  .project-video-slide,
   .site-footer {
     display: none !important;
   }
@@ -1155,6 +1151,7 @@ main,
   }
 
   .project-media.project-media-recycling {
+    grid-template-columns: 1fr 1fr;
     max-width: none;
     justify-self: stretch;
   }
